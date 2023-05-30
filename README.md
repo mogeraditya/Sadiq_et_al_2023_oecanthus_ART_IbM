@@ -13,7 +13,7 @@ Females perform phonotaxis to find mates, and females are known to often prefere
 
 ## Guide to the repo
 
-* the *IbM* folder contains all Python files that are used for running simulations, and implements the IbMs used in the paper. We implemented two different models, one with bushes and one without, and these can be found in two different sub-folders.
+* the *IbM* folder contains all Python files that are used for running simulations, and implements the IbMs used in the paper. We implemented two different models, one with bushes and one with a spatially homogeneous habitat, and these can be found in two different sub-folders.
 * the *figurewise_plotting* folder contains R scripts to replicate the figures presented in Sadiq et al 2023, as well as the data files that were used to create the plots (obtained as output of the IbM).
 
 
