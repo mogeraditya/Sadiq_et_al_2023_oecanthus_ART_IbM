@@ -1,4 +1,4 @@
-Each individual folder implements a separate version of the IbM - One with bushes, and one without. Both are meant to be run from the terminal, ideally on some sort of cluster computer. In both cases, to run the simulation, simply run
+Each individual folder implements a separate version of the IbM - One with bushes, and one with a homogeneous habitat. Both are meant to be run from the terminal, ideally on some sort of cluster computer. In both cases, to run the simulation, simply run
 
 ```zsh
 foo@bar:~ python3 main_array_run.py -f $FREQ -d $DENS -file $FILENAME
@@ -11,7 +11,7 @@ on a terminal. In this line,
 * The ```-file``` flag (which was provided the argument ```$FILENAME``` above) should receive a string, and specifies the filename of the .CSV file in which output of the IbM should be stored.
 </br>
 </br>
-In both cases, the output of the IbM will be a .CSV file containing several relevant output variables, most importantly, the mating success of each tactic. To run several instances of the IbM in parallel, simply write a bash script that loops through several values of baffling trait frequency and/or population density and runs ```main_array_run.py``` with each set of parameters. 
+In both cases, the output of the IbM will be a .CSV file containing several relevant output variables, most importantly, the mating success of each tactic. To run several instances of the IbM in parallel, simply write a bash script that loops through several values of baffling trait frequency and/or population density and runs  ```main_array_run.py```  with each set of parameters. 
 
   
 
