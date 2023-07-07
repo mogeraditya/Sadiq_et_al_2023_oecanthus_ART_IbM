@@ -49,7 +49,7 @@ if __name__ == "__main__":
      file = str(args.file)
 
 #Location to which output should be stored
-save_path = 'output/'
+save_path = "D:\github\Sadiq_et_al_2023_oecanthus_ART_IbM\output"
 
 ##################### Simulation parameters (for computing) ###################
 runs = 100 #Number of realizations over which to average the results

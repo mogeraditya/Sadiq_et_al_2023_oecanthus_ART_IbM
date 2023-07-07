@@ -118,5 +118,5 @@ def simulate_and_save(params,runs,N,cores,save_path,filename):
     
     data_final.columns = colnames
     #save to file
-    data_final.to_csv(save_path+"output_"+str(N)+"_individuals_" + "array_"+str(filename)+".csv")
+    data_final.to_csv(save_path+"\output_"+str(N)+"_individuals_" + "array_"+str(filename)+".csv")
         

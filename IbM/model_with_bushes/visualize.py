@@ -40,7 +40,7 @@ fem_vel /= np.sqrt(2)
 sim.gen_receivers(fem_vel,fem_vel,side)
 
 #directory to which to save the visualization
-save_dir = ''
+save_dir = "D:\github\Sadiq_et_al_2023_oecanthus_ART_IbM\output"
 
 sim.run(10,side)
 sim.visualize(1,save=True, filename = (save_dir+str('fig_1_B.png')))
