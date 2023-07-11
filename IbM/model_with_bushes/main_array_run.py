@@ -29,13 +29,11 @@ from set_up_parallelization import simulate_and_save
 
 ################ Take arguments as input (for looping over in the array job) ################################
 
-
 if __name__ == "__main__": 
      
      #the if condition makes sure that arguments are asked for only when this file is the main program
      #and not when it is imported in another piece of code
      #p
-
 
      parser = argparse.ArgumentParser(description="IbM of alternative reproductive tactics in tree crickets")
 
@@ -47,6 +45,7 @@ if __name__ == "__main__":
      freq = float(args.frequency)
      dens = float(args.density)
      file = str(args.file)
+
 
 #Location to which output should be stored
 save_path = "D:\github\Sadiq_et_al_2023_oecanthus_ART_IbM\output"
