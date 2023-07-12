@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
 
 #Location to which output should be stored
-save_path = "D:\github\Sadiq_et_al_2023_oecanthus_ART_IbM\output"
+save_path = "D:\github\Sadiq_et_al_2023_oecanthus_ART_IbM"
 
 ##################### Simulation parameters (for computing) ###################
 runs = 100 #Number of realizations over which to average the results
