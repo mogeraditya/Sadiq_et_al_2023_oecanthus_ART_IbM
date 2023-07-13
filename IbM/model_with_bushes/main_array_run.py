@@ -48,11 +48,11 @@ if __name__ == "__main__":
 
 
 #Location to which output should be stored
-save_path = "D:\github\Sadiq_et_al_2023_oecanthus_ART_IbM"
+save_path = "D:/github/Sadiq_et_al_2023_oecanthus_ART_IbM/output/"
 
 ##################### Simulation parameters (for computing) ###################
-runs = 100 #Number of realizations over which to average the results
-cores = 16 #Number of cores to use while running the simulation
+runs = 2 #Number of realizations over which to average the results
+cores = 1 #Number of cores to use while running the simulation
 N = 500    #Number of individuals to use in the simulation
 
 #Run the model

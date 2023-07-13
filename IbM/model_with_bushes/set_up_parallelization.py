@@ -87,11 +87,16 @@ def simulate_and_save(params,runs,N,cores,save_path,filename):
     '''
     
     #run the combined_run in parallel over specified number of cores
-    pool = mp.Pool(cores)
-    results = [pool.apply(combined_run, args=(values, runs,N)) for values in params]
-    pool.close()
-    
+    '''
+#    pool = mp.Pool(cores)
+#    results = [pool.apply(combined_run, args=(values, runs,N)) for values in params]
+#    pool.close()
+    '''
     #format the output so that it looks nicer
+#    results= []
+#   for values in params:
+    results = [combined_run(values, runs,N) for values in params]
+
     result_array = np.vstack(results)
     data_final= pd.DataFrame(result_array)
     
@@ -118,5 +123,5 @@ def simulate_and_save(params,runs,N,cores,save_path,filename):
     
     data_final.columns = colnames
     #save to file
-    data_final.to_csv(save_path+"\output_"+str(N)+"_individuals_" + "array_"+str(filename)+".csv")
+    data_final.to_csv(save_path+"output_"+str(N)+"_individuals_" + "array_"+str(filename)+".csv")
         
